@@ -1,12 +1,15 @@
 # sphero-gamepad
-Simple xbox controller bindings for sphero Droid
+Simple Xbox Controller bindings for Sphero Droid
 
 ## Quick start
 - `git clone https://github.com/Glogo/sphero-gamepad.git`
 - `npm install`
 - change droid uuid address in index.js
 - `sudo npm start`
-- (optional) `sudo killall xboxdrv` (if you are having problems conneting to gamepad)
+
+## Troubleshooting
+- if after `sudo npm start` you get `xboxdrv process exited with code 0` run `sudo rmmod xpad`
+- if you have hanging xboxdrv process stop it using: `sudo killall xboxdrv`
 
 ## Prerequisites
 - Linux & xboxdrv
